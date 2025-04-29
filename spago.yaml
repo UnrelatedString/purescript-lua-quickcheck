@@ -50,5 +50,5 @@ workspace:
       ref: 7548ce29d5eaa818d7c649dce730aa0ff05f21e2
     prelude:
       git: https://github.com/UnrelatedString/purescript-lua-prelude.git
-      ref: 2ce1c5cd28895b0698f0c6c49311d257639e2497
+      ref: 3dd38f7fa6acc4277a86441ba1b43b1ace34a1c9
       dependencies: []
