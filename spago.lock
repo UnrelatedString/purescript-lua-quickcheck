@@ -8096,7 +8096,12 @@
         }
       }
     },
-    "extra_packages": {}
+    "extra_packages": {
+      "random": {
+        "git": "https://github.com/UnrelatedString/purescript-lua-random.git",
+        "ref": "29a4ef6f1fc129747a41b4aaf2df1f331afc0caa"
+      }
+    }
   },
   "packages": {
     "arrays": {
@@ -8460,11 +8465,12 @@
     },
     "random": {
       "type": "git",
-      "url": "https://github.com/purescript/purescript-random.git",
-      "rev": "9540bc965a9596da02fefd9949418bb19c92533a",
+      "url": "https://github.com/UnrelatedString/purescript-lua-random.git",
+      "rev": "29a4ef6f1fc129747a41b4aaf2df1f331afc0caa",
       "dependencies": [
         "effect",
-        "integers"
+        "integers",
+        "prelude"
       ]
     },
     "record": {

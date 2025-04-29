@@ -1,4 +1,4 @@
-# purescript-quickcheck
+# purescript-lua-quickcheck
 
 [![Build status](https://github.com/UnrelatedString/purescript-lua-quickcheck/workflows/CI/badge.svg?branch=main)](https://github.com/UnrelatedString/purescript-lua-quickcheck/actions?query=workflow%3ACI+branch%3Amain)
 ![Latest Version Tag](https://img.shields.io/github/v/tag/UnrelatedString/purescript-lua-quickcheck)
