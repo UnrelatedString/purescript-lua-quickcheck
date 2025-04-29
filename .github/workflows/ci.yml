@@ -35,3 +35,6 @@ jobs:
       
       - name: Run tests
         run: lua output/main.lua
+      
+      - name: Fail because uhhh the tests just aren't running how did I solve that before uhhhh????
+        run: FUCK
