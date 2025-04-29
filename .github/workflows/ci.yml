@@ -30,5 +30,8 @@ jobs:
       - name: Put pslua on PATH
         run: realpath bin >> $GITHUB_PATH
 
-      - name: Build and test
-        run: spago test
+      - name: Build tests
+        run: spago build
+      
+      - name: Run tests
+        run: lua output/main.lua

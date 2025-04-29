@@ -8099,7 +8099,7 @@
     "extra_packages": {
       "random": {
         "git": "https://github.com/UnrelatedString/purescript-lua-random.git",
-        "ref": "29a4ef6f1fc129747a41b4aaf2df1f331afc0caa"
+        "ref": "7548ce29d5eaa818d7c649dce730aa0ff05f21e2"
       }
     }
   },
@@ -8466,7 +8466,7 @@
     "random": {
       "type": "git",
       "url": "https://github.com/UnrelatedString/purescript-lua-random.git",
-      "rev": "29a4ef6f1fc129747a41b4aaf2df1f331afc0caa",
+      "rev": "7548ce29d5eaa818d7c649dce730aa0ff05f21e2",
       "dependencies": [
         "effect",
         "integers",

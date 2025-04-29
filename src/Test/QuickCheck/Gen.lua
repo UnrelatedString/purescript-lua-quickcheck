@@ -5,5 +5,5 @@ return {
     local packed = string.pack("n", n)
     local unpacked = string.unpack("i", packed)
     return unpacked
-  ),
+  end),
 }
