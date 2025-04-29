@@ -4,7 +4,7 @@
 ![Latest Version Tag](https://img.shields.io/github/v/tag/UnrelatedString/purescript-lua-quickcheck)
 [![Pursuit (original JS version)](https://pursuit.purescript.org/packages/purescript-quickcheck/badge)](https://pursuit.purescript.org/packages/purescript-quickcheck)
 
-An implementation of QuickCheck in PureScript, ported to the Lua backend.
+An implementation of QuickCheck in PureScript, ported to [the Lua backend](https://github.com/Unisay/purescript-lua).
 
 ## Installation
 
