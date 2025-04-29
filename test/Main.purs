@@ -75,7 +75,7 @@ main = do
   logShow =<< go 100000
 
   log "Generating via Generic"
-  logShow =<< randomSample' 10 (arbitrary :: Gen (Foo Int))
+  --logShow =<< randomSample' 10 (arbitrary :: Gen (Foo Int))
 
   log "Arbitrary instance for records"
   listOfRecords ← randomSample' 10 (arbitrary :: Gen { foo :: Int, nested :: { bar :: Boolean } })
