@@ -59,6 +59,7 @@ main :: Effect Unit
 main = do
   log "MonadGen.resize"
   log (show (testResize' (MGen.resize <<< const)))
+  log (show (mkSeed 0))
   assert (testResize (MGen.resize <<< const))
   log "Gen.resize"
   assert (testResize (resize))
