@@ -43,9 +43,22 @@ testResize resize' =
   in
     fst $ runGen gen { newSeed: mkSeed 0, size: initialSize }
 
+testResize' :: (forall a. Size -> Gen a -> Gen a) -> _
+testResize' resize' =
+  let
+    initialSize = 2
+    gen = do
+      s1 <- sized pure
+      s2 <- resize' 1 (sized pure)
+      s3 <- sized pure
+      pure $ [ s1, s2, s3 ]
+  in
+    runGen gen { newSeed: mkSeed 0, size: initialSize }
+
 main :: Effect Unit
 main = do
   log "MonadGen.resize"
+  log (show (testResize' (MGen.resize <<< const)))
   assert (testResize (MGen.resize <<< const))
   log "Gen.resize"
   assert (testResize (resize))
