@@ -1,10 +1,10 @@
 # purescript-quickcheck
 
-[![Latest release](http://img.shields.io/github/release/purescript/purescript-quickcheck.svg)](https://github.com/purescript/purescript-quickcheck/releases)
-[![Build status](https://github.com/purescript/purescript-quickcheck/workflows/CI/badge.svg?branch=master)](https://github.com/purescript/purescript-quickcheck/actions?query=workflow%3ACI+branch%3Amaster)
-[![Pursuit](https://pursuit.purescript.org/packages/purescript-quickcheck/badge)](https://pursuit.purescript.org/packages/purescript-quickcheck)
+[![Latest release](http://img.shields.io/github/release/UnrelatedString/purescript-lua-quickcheck.svg)](https://github.com/UnrelatedString/purescript-lua-quickcheck/releases)
+[![Build status](https://github.com/UnrelatedString/purescript-lua-quickcheck/workflows/CI/badge.svg?branch=main)](https://github.com/UnrelatedString/purescript-lua-quickcheck/actions?query=workflow%3ACI+branch%3Amain)
+[![Pursuit](https://pursuit.purescript.org/packages/purescript-lua-quickcheck/badge)](https://pursuit.purescript.org/packages/purescript-lua-quickcheck)
 
-An implementation of QuickCheck in PureScript.
+An implementation of QuickCheck in PureScript, ported to the Lua backend.
 
 ## Installation
 

@@ -30,7 +30,8 @@ package:
     - unfoldable: ">=6.0.0 <7.0.0"
   test:
     main: Test.Main
-    dependencies: []
+    dependencies:
+      - assert: ">=6.0.0 <7.0.0"
 workspace:
   backend:
     cmd: pslua
@@ -39,6 +40,8 @@ workspace:
       - "."
       - "--lua-output-file"
       - "output/main.lua"
+      - "--entry"
+      - "Test.Main"
   packageSet:
     path: ./packages.json
   extraPackages: {}

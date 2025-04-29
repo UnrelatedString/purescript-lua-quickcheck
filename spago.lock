@@ -133,8 +133,17 @@
           ]
         },
         "test": {
-          "dependencies": [],
-          "build_plan": []
+          "dependencies": [
+            {
+              "assert": ">=6.0.0 <7.0.0"
+            }
+          ],
+          "build_plan": [
+            "assert",
+            "console",
+            "effect",
+            "prelude"
+          ]
         }
       }
     },
@@ -8103,6 +8112,16 @@
         "st",
         "unfoldable",
         "unsafe-coerce"
+      ]
+    },
+    "assert": {
+      "type": "git",
+      "url": "https://github.com/Unisay/purescript-lua-assert.git",
+      "rev": "74206b80c9d5bb247ac9173b61d8b4b1175f473e",
+      "dependencies": [
+        "console",
+        "effect",
+        "prelude"
       ]
     },
     "bifunctors": {
