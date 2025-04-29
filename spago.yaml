@@ -39,7 +39,7 @@ workspace:
       - "--foreign-path"
       - "."
       - "--lua-output-file"
-      - "output/main.lua"
+      - "output/test.lua"
       - "--entry"
       - "Test.Main"
   packageSet:
