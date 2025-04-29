@@ -1,35 +1,34 @@
 name: CI
-
-on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: [master]
+on: [push]
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: purescript-contrib/setup-purescript@main
+      - name: Install Lua interpreter
+        uses: leafo/gh-actions-lua@v11
+
+      - name: Set up Node 20
+        uses: actions/setup-node@v4
         with:
-          purescript: "unstable"
+          node-version: "20.x"
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "14.x"
-
-      - name: Install dependencies
+      - name: Set up Purescript and spago
         run: |
-          npm install -g bower
-          npm install
-          bower install --production
+          npm i -g purescript
+          npm i -g spago
 
-      - name: Build source
-        run: npm run-script build
+      - name: Download pslua
+        run: wget -c https://github.com/Unisay/purescript-lua/releases/download/0.2/pslua-linux_x86_64.tar.gz -O - | tar -xz
 
-      - name: Run tests
-        run: |
-          bower install
-          npm run-script test --if-present
+      - run: mkdir bin
+      - run: mv pslua bin
+
+      - name: Put pslua on PATH
+        run: realpath bin >> $GITHUB_PATH
+
+      - name: Build and test
+        run: spago test
