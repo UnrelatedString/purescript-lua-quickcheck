@@ -8097,6 +8097,11 @@
       }
     },
     "extra_packages": {
+      "prelude": {
+        "git": "https://github.com/UnrelatedString/purescript-lua-prelude.git",
+        "ref": "2ce1c5cd28895b0698f0c6c49311d257639e2497",
+        "dependencies": []
+      },
       "random": {
         "git": "https://github.com/UnrelatedString/purescript-lua-random.git",
         "ref": "7548ce29d5eaa818d7c649dce730aa0ff05f21e2"
@@ -8444,8 +8449,8 @@
     },
     "prelude": {
       "type": "git",
-      "url": "https://github.com/Unisay/purescript-lua-prelude.git",
-      "rev": "384b74cec7d51a2fa20baad3768cf00575aedf63",
+      "url": "https://github.com/UnrelatedString/purescript-lua-prelude.git",
+      "rev": "2ce1c5cd28895b0698f0c6c49311d257639e2497",
       "dependencies": []
     },
     "profunctor": {
