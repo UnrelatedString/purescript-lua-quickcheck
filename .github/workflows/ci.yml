@@ -15,6 +15,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20.x"
+      
+      - name: Cache Spago deps
+        uses: actions/cache@v4
+        with:
+          path: .spago
+          key: spago-deps-${{ hashFiles('spago.lock') }}
+          restore-keys: |
+            spago-deps-
 
       - name: Set up Purescript and spago
         run: |
@@ -33,5 +41,8 @@ jobs:
       - name: Build tests
         run: spago build
       
+      - name: What even IS running on CI ???????
+        run: cat output/test.lua
+
       - name: Run tests
         run: lua test.lua
